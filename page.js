@@ -2,7 +2,7 @@ var a, b;
 a = false;
 b = false;
 document.write(
-    '<h1>Таблица истинности логических функций</h1>'
+    '<h1 class="top">Таблица истинности логических функций</h1>'
 );
 document.writeln(
     '<div class="flex_table">'+
