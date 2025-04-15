@@ -12,9 +12,10 @@
     font-size: 20pt;
     text-align: center;
 }
-.table_title {
+.table_title > div {
     color: #dc2662;
     font-weight: bold;
+    background-color: #fff3f3;
 }
 .top {
     text-align: center;
