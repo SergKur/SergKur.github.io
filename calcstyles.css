@@ -1,8 +1,8 @@
 /* стили для калькулятора */
 #calc {
     width: 350px;
-    left: 50px;
-    top: 50px;
+    left: 25px;
+    top: 25px;
     position: absolute;
     z-index: 9;
     background-color: #f3f3f3;
