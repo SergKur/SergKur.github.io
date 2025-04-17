@@ -1,0 +1,65 @@
+/* стили для калькулятора */
+#calc {
+    width: 350px;
+    left: 50px;
+    top: 50px;
+    position: absolute;
+    z-index: 9;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+#calcheader {
+    border-radius: 20px;
+    cursor: move;
+    z-index: 10;
+    background-color: #f3f3f3;
+}
+#display {
+    width: 87%;
+    height: 80px;
+    text-align: right;
+    margin:  20px 6px 10px 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 7px;
+    color: #7e7a7a;
+    border: none;
+    background-color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
+    overflow: auto;
+}
+.button {
+    width: 21%;
+    margin: 5px;
+    display: inline-block;
+    background-color: rgba(130, 149, 151, 0.84);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+.button:hover {
+    background-color: rgba(97, 157, 163, 0.84);
+}
+.spec {
+    background-color: rgba(218, 170, 119, 0.84);
+}
+.spec:hover {
+    background-color: rgba(248, 156, 58, 0.84);
+}
+#equals {
+    background-color: #f6812e;
+}
+#equals:hover {
+    background-color: #f36908;
+}
+#buttons {
+    margin: 0px 10px 10px 10px;
+}

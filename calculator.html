@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Простейший калькулятор</title>
+    <link rel="stylesheet" href="calcstyles.css" /> <!-- подключаю стили для калькулятора -->
+    <script src="calculate.js"></script> <!-- подключаю скрипт с обработкой кликов по клавишам калькулятора -->
+    </head>
+<body>
+<div id="calc">
+    <div id="calcheader">
+        <pre id="display">0</pre>  <!-- использую тег pre для отформатированного вывода в элемент, который будет служить дисплеем -->
+        <div id="buttons">
+        <!--  на кнопки устанавливаю обработчики события "клик мышью", их функционал прописан в файле calculate.js -->
+        <button class="button spec" onclick="clearDisplay()">C</button>
+        <button class="button spec" onclick="addToDisplay('(')">(</button>
+        <button class="button spec" onclick="addToDisplay(')')">)</button>
+        <button class="button spec" onclick="clearLastElement()">&#9003;</button>
+        <button class="button" onclick="addToDisplay('1')">1</button>
+        <button class="button" onclick="addToDisplay('2')">2</button>
+        <button class="button" onclick="addToDisplay('3')">3</button>
+        <button class="button spec" onclick="addToDisplay('+')">+</button>
+        <button class="button" onclick="addToDisplay('4')">4</button>
+        <button class="button" onclick="addToDisplay('5')">5</button>
+        <button class="button" onclick="addToDisplay('6')">6</button>
+        <button class="button spec" onclick="addToDisplay('-')">-</button>
+        <button class="button" onclick="addToDisplay('7')">7</button>
+        <button class="button" onclick="addToDisplay('8')">8</button>
+        <button class="button" onclick="addToDisplay('9')">9</button>
+        <button class="button spec" onclick="addToDisplay('*')">&lowast;</button>
+        <button class="button" onclick="addToDisplay('0')">0</button>
+        <button class="button" onclick="addToDisplay('.')">.</button>
+        <button class="button" id="equals" onclick="calculateResult()">=</button>
+        <button class="button spec" onclick="addToDisplay('/')">/</button>
+     </div>
+    </div>
+</div>
+<script src="remove.js"></script> <!-- подключаю скрипт перемещения по экрану элемента страницы, захваченного мышью -->
+</body>
+</html>
+
