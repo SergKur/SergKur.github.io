@@ -1,0 +1,118 @@
+/* стили для дневника чтения  */
+table {
+    width: 100%;
+    height: 200px;
+    font-family: "Comic Sans MS", Sans-Serif, serif;
+    border-collapse: collapse;
+    text-align: center;
+}
+caption{
+    background: #c3dbf1;
+    color: #1e1f20;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+th, td:first-child {
+    background: #cedeed;
+    color: #1e1f20;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+}
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -3px;
+    z-index: 2;
+}
+td {
+    background: rgba(216, 230, 243, 0.75);
+}
+td:nth-child(2), td:nth-child(3) {
+    text-align: left;
+    padding-left: 10px;
+}
+.forms {
+    width: 40%;
+    margin-top: 40px;
+    font-family: "Comic Sans MS", Sans-Serif, serif;
+    border-color:  #c3dbf1;
+}
+fieldset {
+    border-color:  #c3dbf1;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+fieldset:hover {
+    border-color: #4da5f3;
+}
+legend {
+    font-size: 18px;
+    color: #13669c;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.click {
+    font-family: "Comic Sans MS", Sans-Serif, serif;
+    line-height: 40px;
+    width: 140px;
+    letter-spacing: 2px;
+    background: #cedeed;
+    border-radius: 1px;
+    color: #1e1f20;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+.click:hover {
+    background: #a0c8ed;;
+}
+#author {
+    margin: 15px 0 0 15px;
+    font-family: "Comic Sans MS", Sans-Serif, serif;
+    width: 85%;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#title {
+    margin: 0 0 0 15px;
+    font-family: "Comic Sans MS", Sans-Serif, serif;
+    width: 80.5%;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#characters {
+    margin: 0 0 0 15px;
+    font-family: "Comic Sans MS", Sans-Serif, serif;
+    width: 72.8%;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#pages {
+    margin: 0 0 0 15px;
+    font-family: "Comic Sans MS", Sans-Serif, serif;
+    width: 15%;
+    height: 20px;
+    padding-left: 10px;
+}
+#button {
+    text-align: right;
+}
+input:required {
+    background-color: rgba(216, 230, 243, 0.40);
+}
